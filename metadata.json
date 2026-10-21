@@ -1,0 +1,6 @@
+{
+  "name": "MCR Lunch Club — Sovereign Food Ledger",
+  "description": "Chairs' Area and Sovereign Food Ledger for Manchester dining appraisals, dual-chair concords, walking isochrones, and judicial lunch decrees.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

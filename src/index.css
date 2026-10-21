@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border-buff: #D9CFB8;
+  --color-canvas-cream: #FBF6EA;
+  --color-surface-card: #F3ECDB;
+  --color-surface-paper: #F7F0DF;
+  --color-surface: #fff8f3;
+  --color-surface-dim: #e1d9d2;
+  --color-surface-container: #f5ece5;
+  --color-surface-container-low: #fbf2eb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #efe7e0;
+  --color-surface-container-highest: #e9e1da;
+  --color-surface-variant: #e9e1da;
+  --color-primary: #001854;
+  --color-primary-container: #1b2f6b;
+  --color-primary-fixed: #dce1ff;
+  --color-primary-fixed-dim: #b6c4ff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #8799db;
+  --color-on-primary-fixed: #00164e;
+  --color-on-primary-fixed-variant: #314380;
+  --color-secondary: #8a5100;
+  --color-secondary-container: #ffa538;
+  --color-secondary-fixed: #ffdcbd;
+  --color-secondary-fixed-dim: #ffb86d;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #6c3e00;
+  --color-on-secondary-fixed: #2c1600;
+  --color-on-secondary-fixed-variant: #683c00;
+  --color-tertiary: #0e1b44;
+  --color-tertiary-container: #25315b;
+  --color-on-tertiary: #ffffff;
+  --color-on-surface: #1e1b17;
+  --color-on-surface-variant: #454650;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-tier-approved: #1E7A4E;
+  --color-tier-approved-bg: #E8F5EE;
+  --color-tier-consideration: #C27803;
+  --color-tier-consideration-bg: #FEF5E7;
+  --color-tier-assessed: #5A6474;
+  --color-tier-assessed-bg: #F0F2F5;
+  --color-tier-rejected: #B92B27;
+  --color-tier-rejected-bg: #FDF0F0;
+  --color-tier-reluctant: #7C3A82;
+  --color-tier-reluctant-bg: #F7EEF8;
+  --color-tier-archived: #71717A;
+  --color-tier-archived-bg: #F4F4F5;
+
+  --font-headline-xl: "Playfair Display", Georgia, serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-headline-sm: "Playfair Display", Georgia, serif;
+  --font-title-editorial: "Playfair Display", Georgia, serif;
+  --font-ledger-subhead: "Plus Jakarta Sans", sans-serif;
+  --font-label-ledger: "Plus Jakarta Sans", sans-serif;
+  --font-label-button: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #FBF6EA;
+    color: #1e1b17;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Spacing & Typography mappings to match design specification */
+.font-headline-xl {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+  .font-headline-xl {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.font-headline-lg {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.font-headline-lg-mobile {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.font-title-editorial {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.font-ledger-subhead {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.font-label-ledger {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.font-label-button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.font-body-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.font-body-sm {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+/* Margin and spacing shortcuts matching the token spec */
+.px-margin-desktop {
+  padding-left: clamp(1rem, 3vw, 2.5rem);
+  padding-right: clamp(1rem, 3vw, 2.5rem);
+}
+.px-margin {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.gap-space-sm { gap: 0.5rem; }
+.gap-space-md { gap: 0.875rem; }
+.gap-space-lg { gap: 1.5rem; }
+.gap-space-xl { gap: 2rem; }
+.p-space-sm { padding: 0.5rem; }
+.p-space-md { padding: 0.875rem; }
+.p-space-lg { padding: 1.5rem; }
+.p-space-xl { padding: 2rem; }
+.py-space-xs { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-space-sm { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-space-md { padding-top: 0.875rem; padding-bottom: 0.875rem; }
+.py-space-lg { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-space-xl { padding-top: 2rem; padding-bottom: 2rem; }
+.px-space-xs { padding-left: 0.25rem; padding-right: 0.25rem; }
+.px-space-sm { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-space-md { padding-left: 0.875rem; padding-right: 0.875rem; }
+.px-space-lg { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-space-xl { padding-left: 2rem; padding-right: 2rem; }
+.mb-space-xs { margin-bottom: 0.25rem; }
+.mb-space-sm { margin-bottom: 0.5rem; }
+.mb-space-md { margin-bottom: 0.875rem; }
+.mb-space-lg { margin-bottom: 1.5rem; }
+.mb-space-xl { margin-bottom: 2rem; }
+.pt-space-xs { padding-top: 0.25rem; }
+.pt-space-sm { padding-top: 0.5rem; }
+.pt-space-md { padding-top: 0.875rem; }
+.pb-space-sm { padding-bottom: 0.5rem; }
+.pb-space-md { padding-bottom: 0.875rem; }
+.pb-space-lg { padding-bottom: 1.5rem; }
